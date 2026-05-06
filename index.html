@@ -1,0 +1,670 @@
+﻿<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Loja de vapes sem nicotina em Portugal. Descobre vape descartável, cigarros eletrónicos e sabores premium com envio rápido, preços competitivos e milhares de tragadas."
+  >
+  <title>Vapes Sem Nicotina - Loja Online em Portugal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="https://vapeportugal.pt/" aria-label="Inicio">
+        <img src="img/favicon-96x96.png" alt="Vapes Sem Nicotina" class="brand-mark">
+        <span class="brand-copy">
+          <strong>Vapes Sem Nicotina</strong>
+          <small>Loja Online em Portugal</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="https://vapeportugal.pt/">Pagina Inicial</a>
+        <a href="https://vapeportugal.pt/">Produtos</a>
+        <a href="https://vapeportugal.pt/">Sobre nós</a>
+        <a href="https://vapeportugal.pt/">Blog</a>
+        <a href="https://vapeportugal.pt/">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-pill" href="https://vapeportugal.pt/" aria-label="Procurar produtos">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M20 20 16.6 16.6"></path>
+          </svg>
+        </a>
+        <a class="icon-pill" href="https://vapeportugal.pt/" aria-label="Ir para o carrinho">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="9" cy="20" r="1"></circle>
+            <circle cx="18" cy="20" r="1"></circle>
+            <path d="M3 4h2l2.5 10h10l2-7H7"></path>
+          </svg>
+        </a>
+        <a class="btn btn-primary desktop-cta" href="https://vapeportugal.pt/">Comprar agora</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner-slider" aria-label="Banners promocionais">
+      <div class="banner-slider__viewport">
+        <div class="banner-slider__track" id="bannerTrack">
+          <article class="promo-banner">
+            <div class="promo-banner__media image-placeholder is-empty">
+              <picture class="promo-banner__picture">
+                <source
+                  media="(max-width: 560px)"
+                  srcset="img/Hayati-Pro-Ultra-Sem-Nicotina-Vape-Descartavel-Portugal-Banner-Mobile.png"
+                >
+                <img
+                  src="img/Hayati-Pro-Ultra-Sem-Nicotina-Vape-Descartavel-Portugal-Banner.png"
+                  alt="Hayati Pro Ultra Sem Nicotina Banner"
+                  data-placeholder="Banner 1 - substitui pela tua imagem"
+                >
+              </picture>
+            </div>
+          </article>
+
+          <article class="promo-banner">
+            <div class="promo-banner__media image-placeholder is-empty">
+              <picture class="promo-banner__picture">
+                <source
+                  media="(max-width: 560px)"
+                  srcset="img/Hayati-Pro-Max-Sem-Nicotina-Vape-Descartavel-Portugal-Banner-Mobile.png"
+                >
+                <img
+                  src="img/Hayati-Pro-Max-Sem-Nicotina-Vape-Descartavel-Portugal-Banner.png"
+                  alt="Hayati Pro Max Sem Nicotina Banner"
+                  data-placeholder="Banner 2 - substitui pela tua imagem"
+                >
+              </picture>
+            </div>
+          </article>
+
+          <article class="promo-banner">
+            <div class="promo-banner__media image-placeholder is-empty">
+              <picture class="promo-banner__picture">
+                <source
+                  media="(max-width: 560px)"
+                  srcset="img/Maxipuff-Puff-Klip-Sem-Nicotina-Vape-Descartavel-Portugal-Banner-Mobile.png"
+                >
+                <img
+                  src="img/Maxipuff-Puff-Klip-Sem-Nicotina-Vape-Descartavel-Portugal-Banner.png"
+                  alt="Maxipuff Puff Klip Sem Nicotina Banner"
+                  data-placeholder="Banner 3 - substitui pela tua imagem"
+                >
+              </picture>
+            </div>
+          </article>
+        </div>
+
+        <button class="banner-arrow banner-arrow--prev" id="bannerPrev" aria-label="Banner anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18 9 12l6-6"></path>
+          </svg>
+        </button>
+        <button class="banner-arrow banner-arrow--next" id="bannerNext" aria-label="Banner seguinte">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="container banner-slider__controls">
+        <div class="slider-dots" id="bannerDots" aria-label="Indicadores dos banners"></div>
+      </div>
+    </section>
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy hero-copy--stacked">
+          <p class="eyebrow">Cigarros Eletrónicos</p>
+          <h1>Vapes Descartáveis Sem Nicotina</h1>
+          <p class="hero-text">
+            Vape descartável 0% nicotina com muitas tragadas e sabores intensos.
+Descobre cigarros eletrónicos descartáveis prontos a usar, ideais para uma experiência de vaping prática e satisfatória.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://vapeportugal.pt/">Ver produtos</a>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <div class="hero-badge hero-badge--floating">
+            <span>Sem</span>
+            <small>Nicotina</small>
+          </div>
+          <div class="hero-product">
+            <div class="hero-slider-window" aria-live="polite">
+              <div class="hero-slider-track" id="heroTrack">
+                <figure class="hero-slide">
+                  <div class="image-placeholder image-placeholder--hero">
+                    <img src="img/Hayati-Pro-Ultra-15K-Vape-Descartavel-Portugal-Pineapple-Fantasy-0-Nicotina-15000-Tragadas.png" alt="Hayati Pro Ultra 15K Pineapple Fantasy 0% Nicotina 15000 Puffs" data-placeholder="Substitui pela imagem principal" id="heroImage">
+                  </div>
+                </figure>
+                <figure class="hero-slide">
+                  <div class="image-placeholder image-placeholder--hero">
+                    <img src="img/Hayati-Pro-Max-4K-Vape-Descartavel-Portugal-Cola-Lime-4000-Tragadas.png" alt="Hayati Pro Max 4K Blackcurrant Mango" data-placeholder="Imagem do produto destaque">
+                  </div>
+                </figure>
+                <figure class="hero-slide">
+                  <div class="image-placeholder image-placeholder--hero">
+                    <img src="img/Maxi-Puff-Klip-18K-Vape-Descartavel-Portugal-Blueberry-Raspberry-18000-Tragadas.png" alt="Maxi Puff Klip 18K Vanilla Classic 18000 Puffs" data-placeholder="Imagem do produto destaque">
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <div class="hero-product-curve" aria-hidden="true"></div>
+          </div>
+          <a class="hero-product-btn" href="https://vapeportugal.pt/collections/vapes-descartaveis-sem-nicotina-portugal">Comprar agora</a>
+          <div class="slider-bar">
+            <button class="slider-btn" id="prevSlide" aria-label="Produto anterior">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15 18 9 12l6-6"></path>
+              </svg>
+            </button>
+            <div class="slider-dots" id="sliderDots" aria-label="Indicadores do slider"></div>
+            <button class="slider-btn" id="nextSlide" aria-label="Produto seguinte">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="hero-badge hero-badge--side">
+            <span id="heroPuffs">15K</span>
+            <small>Puffs</small>
+          </div>
+          <div class="hero-features">
+            <div class="side-card">
+              <strong>Sabores intensos e milhares de tragadas para uma experiência de vaping moderna e consistente.</strong>
+            </div>
+            <div class="side-card">
+              <strong>Envio rápido para todo o Portugal com preços competitivos em vape descartável e cigarros eletrónicos.</strong>
+            </div>
+            <div class="side-card">
+              <strong>Vapes prontos a usar, sem configurações complicadas basta abrir, inalar e desfrutar.</strong>
+            </div>
+            
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="highlights" id="catalogo">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Seleção popular</p>
+          <h2>Cigarros eletrónicos descartáveis em destaque</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="image-placeholder is-empty">
+              <img src="img/Hayati-Pro-Ultra-15K-Vape-Descartavel-Portugal-Crystal-Ice-Icy-Citrus-0-Nicotina-15000-Tragadas.png" alt="Hayati Pro Ultra 15K Vape Descartavel" data-placeholder="Imagem produto 1">
+            </div>
+            <div class="product-copy">
+              <span class="product-chip">15000 Tragadas</span>
+              <h3>Hayati Pro Ultra 15K</h3>
+              <p>15000 Puffs — cigarro eletrónico descartável</p>
+              <a class="btn btn-dark" href="https://vapeportugal.pt/products/hayati-pro-ultra-15k-0-nic-vape-descartavel-portugal">Comprar agora</a>
+            </div>
+          </article>
+
+          <article class="product-card product-card--featured">
+            <div class="image-placeholder is-empty">
+              <img src="img/Hayati-Pro-Max-4K-Vape-Descartavel-Portugal-Blackcurrant-Mango-4000-Tragadas.png" alt="Hayati Pro Max 4K Vape Descartavel" data-placeholder="Imagem produto 2">
+            </div>
+            <div class="product-copy">
+              <span class="product-chip">4000 Tragadas</span>
+              <h3>Hayati Pro Max 4K</h3>
+              <p>4000 Puffs — cigarro eletrónico descartável</p>
+              <a class="btn btn-primary" href="https://vapeportugal.pt/products/hayati-pro-max-4k-vape-descartavel-portugal">Comprar agora</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="image-placeholder is-empty">
+              <img src="img/Maxi-Puff-Klip-18K-Vape-Descartavel-Portugal-Vanilla-Classic-18000-Tragadas.png" alt="Maxi Puff Klip 18K Vape Descartavel" data-placeholder="Imagem produto 3">
+            </div>
+            <div class="product-copy">
+              <span class="product-chip">18000 Tragadas</span>
+              <h3>Maxi Puff Klip 18K</h3>
+              <p>18000 Puffs — cigarro eletrónico descartável</p>
+              <a class="btn btn-dark" href="https://vapeportugal.pt/products/maxi-puff-klip-18k-vape-descartavel-portugal">Comprar agora</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-showcase" id="videos">
+      <div class="container">
+        <div class="section-head section-head--centered">
+          <p class="eyebrow">VÊ OS VAPES SEM NICOTINA</p>
+          <h2>Vídeos para descobrires os teus sabores favoritos</h2>
+          <p class="section-intro">Explora os nossos vapes descartáveis sem nicotina através 
+            de vídeos modernos e descobre sabores intensos, designs premium e experiências únicas em cada tragada.</p>
+        </div>
+
+        <div class="video-showcase__grid">
+          <article class="video-card">
+            <div class="video-frame">
+              <video class="video-frame__media" autoplay muted loop controls playsinline aria-label="Hayati Pro Ultra 15000 Puffs 0% Nicotina" src="img/Hayati-Pro-Ultra-15K-Vape-Descartável-Portugal-Video-0-Nicotina-15000-Tragadas.mp4"></video>
+            </div>
+            <div class="video-card__copy">
+              <h3>Hayati Pro Ultra 15000 Puffs 0% Nicotina</h3>
+              <p>Descobre o Hayati Pro Ultra 15000, o vape descartável sem nicotina criado para oferecer longa duração, sabor intenso e máxima simplicidade. Com design moderno e desempenho avançado, 
+                o Hayati Pro Ultra 15K redefine a experiência dos cigarros eletrónicos descartáveis.</p>
+              <a class="btn btn-primary video-card__btn" href="https://vapeportugal.pt/products/hayati-pro-ultra-15k-0-nic-vape-descartavel-portugal">Descobrir detalhes</a>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <video class="video-frame__media" autoplay muted loop controls playsinline aria-label="Hayati Pro Max 4000 Puffs 0% Nicotina" src="img/Hayati-Pro-Max-4K-Vape-Descartável-Portugal-Video-4000-Tragadas.mp4"></video>
+            </div>
+            <div class="video-card__copy">
+              <h3>Hayati Pro Max 4000 Puffs 0% Nicotina</h3>
+              <p>O Hayati Pro Max 4000 é o vape descartável ideal para quem procura sabor intenso, praticidade e uma experiência premium sem nicotina. Compacto, elegante e fácil de usar, 
+                oferece tragadas suaves e consistentes até à última gota.</p>
+              <a class="btn btn-primary video-card__btn" href="https://vapeportugal.pt/products/hayati-pro-max-4k-vape-descartavel-portugal">Descobrir detalhes</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="beneficios">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Descrição</p>
+          <h2>Vapes sem nicotina com sabores intensos e milhares de tragadas</h2>
+          <p class="about-lead">
+            Uma seleção pensada para quem quer sabor intenso, design moderno e uma experiência simples desde a primeira utilização.
+          </p>
+          <div class="about-stats" aria-label="Destaques da secção">
+            <article class="about-stat">
+              <strong>0%</strong>
+              <span>Nicotina</span>
+            </article>
+            <article class="about-stat">
+              <strong>Pronto</strong>
+              <span>A usar</span>
+            </article>
+            <article class="about-stat">
+              <strong>Envio</strong>
+              <span>Rápido em Portugal</span>
+            </article>
+          </div>
+          <p>
+            Descobre uma nova experiência de vape sem nicotina em Portugal. Na nossa vape 
+            shop encontras os melhores vapes descartáveis, criados para oferecer sabor intenso, 
+            design moderno e uma utilização simples no dia a dia. Desde sabores de vape frutados e 
+            refrescantes até aromas doces e gelados, temos opções para todos os estilos de vaper.
+          </p>
+          <div class="about-actions">
+            <button class="btn btn-secondary" id="toggleMore" aria-expanded="false" aria-controls="moreContent">
+              Ver mais
+            </button>
+            <a class="about-link" href="https://vapeportugal.pt/collections/vapes-descartaveis-sem-nicotina-portugal">Explorar coleção</a>
+          </div>
+          <div class="about-extra-copy">
+            <p>Os nossos cigarros eletrónicos descartáveis combinam desempenho elevado com formatos compactos e elegantes. Cada vape descartável foi desenvolvido para proporcionar milhares de tragadas com qualidade consistente, tornando-se a escolha ideal para quem procura praticidade, autonomia e uma experiência de vaping mais confortável.</p>
+            <p>Se procuras vape Portugal com qualidade premium, excelente duração e uma grande variedade de sabores, aqui encontrarás dispositivos modernos e fáceis de usar. Trabalhamos apenas com marcas verificadas para garantir aos nossos clientes uma experiência segura, moderna e satisfatória.</p>
+          </div>
+        </div>
+
+        <div class="about-panels" id="moreContent" hidden>
+          <article class="info-panel">
+            <div class="info-panel__top">
+              <span class="info-panel__tag">Escolha inteligente</span>
+            </div>
+            <h3>Por que escolher um vape sem nicotina</h3>
+            <ul>
+              <li>Milhares de tragadas em formatos compactos</li>
+              <li>Sabores de vape frutados, frescos e doces</li>
+              <li>Utilização simples: abrir, inalar e desfrutar</li>
+              <li>Ideal para uma experiência de vaping prática e sem complicações</li>
+            </ul>
+          </article>
+          <article class="info-panel info-panel--featured">
+            <div class="info-panel__top">
+              <span class="info-panel__tag">Mais procurado</span>
+            </div>
+            <h3>Características principais</h3>
+            <ul>
+              <li>Grande variedade de sabores de vape (frutados, frescos e doces)</li>
+              <li>Cigarro eletrónico descartável pronto a usar</li>
+              <li>Utilização simples: pronto a usar, sem configurações</li>
+              <li>Sabores frutados, frescos, doces e mentolados</li>
+              <li>Excelente desempenho e longa duração</li>
+              <li>Produtos modernos disponíveis em Portugal</li>
+            </ul>
+          </article>
+          <article class="info-panel">
+            <div class="info-panel__top">
+              <span class="info-panel__tag">Compra segura</span>
+            </div>
+            <h3>Vantagens de compra</h3>
+            <ul>
+              <li>Envio rápido em Portugal</li>
+              <li>Preços competitivos em vape descartável</li>
+              <li>Marcas verificadas e de confiança</li>
+              <li>Novidades frequentes na vape shop</li>
+              <li>Compra simples, rápida e segura</li>
+            </ul>
+          </article>
+          <article class="info-panel info-panel--wide info-panel--faq" aria-label="Perguntas frequentes">
+            <div class="info-panel__top">
+              <span class="info-panel__tag">FAQ</span>
+            </div>
+            <h3>Perguntas Frequentes</h3>
+            <div class="faq-list">
+              <details class="faq-item">
+                <summary>Quantas tragadas têm os vapes?</summary>
+                <p>Depende do modelo. Temos cigarros eletrónicos descartáveis com 4000, 15000 e até 18000 tragadas para uma utilização prolongada.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Que sabores de vape estão disponíveis?</summary>
+                <p>Disponibilizamos uma grande variedade de sabores de vape, incluindo sabores frutados, doces, frescos, mentolados e combinações intensas.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Fazem envio para todo o Portugal?</summary>
+                <p>Sim. A nossa vape shop faz envios rápidos para todo o Portugal com entrega segura e rápida.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Os cigarros eletrónicos descartáveis são fáceis de utilizar?</summary>
+                <p>Sim. Basta abrir, inalar e desfrutar. São ideais tanto para novos vapers como para utilizadores experientes.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Qual é o melhor vape sem nicotina?</summary>
+                <p>Modelos como Hayati Pro Ultra 15K, Hayati Pro Max 4K e Maxi Puff Klip 18K estão entre os vapes sem nicotina mais procurados da nossa coleção.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Existem descontos para compras em quantidade?</summary>
+                <p>Sim. Oferecemos descontos automáticos por volume em compras por grosso, ideais para revendedores e vape shops.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Quanto tempo dura um vape descartável?</summary>
+                <p>A duração depende do número de tragadas e da frequência de utilização. Os nossos vapes foram desenvolvidos para oferecer longa duração e desempenho consistente.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Porque escolher um vape sem nicotina?</summary>
+                <p>Os vapes sem nicotina oferecem uma experiência focada no sabor, praticidade e sensação de vaping, sem nicotina.</p>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="opiniones">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Testemunhos</p>
+          <h2>O que os clientes dizem sobre vapes sem nicotina</h2>
+        </div>
+
+        <div class="testimonials-carousel">
+          <div class="testimonials-track-wrap">
+            <div class="testimonials-track" id="testimonialsTrack">
+              <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Maxipuff-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Hayati Pro Ultra 15K Pineapple Fantasy Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"Adorei este cigarro eletronico sem nicotina! Este vape descartavel tem sabores de vape incr&iacute;veis e muitas tragadas. Perfeito para vapers em vape Portugal que procuram qualidade numa vape shop."</p>
+                <span class="testimonial-name">Mariana S.</span>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Hayati-ProMax-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Hayati Pro Max 4K 0 Nicotina Blackcurrant Mango Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"Este vape sem nicotina &eacute; excelente para quem gosta de vaping sem preocupa&ccedil;&otilde;es. Os vapes descartaveis t&ecirc;m &oacute;timos sabores de vape e longa dura&ccedil;&atilde;o de tragadas."</p>
+                <span class="testimonial-name">Marta J.</span>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Hayati-Pro-Max-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Hayati Pro Max 4K 0 Nicotina Blueberry Raspberry Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"Os vapes descartaveis sem nicotina s&atilde;o perfeitos! Este vape tem muitas tragadas e sabores intensos. Recomendo para quem procura vape Portugal."</p>
+                <span class="testimonial-name">André W.</span>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Hayati-Pro-Ultra-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Hayati Pro Ultra 15K 0 Nicotina Crystal Ice Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"Excelente vape descart&aacute;vel sem nicotina. O cigarro eletr&oacute;nico tem &oacute;timos sabores de vape e dura muitas tragadas. Perfeito para vaping di&aacute;rio."</p>
+                <span class="testimonial-name">Sofia C.</span>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Maxipuff-Puff-Klip-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Maxi Puff Klip 18K 0 Nicotina Cola Lime Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"Este vape &eacute; muito leve e agrad&aacute;vel. Os vapes descart&aacute;veis s&atilde;o ideais para vapers que querem uma experi&ecirc;ncia sem nicotina em vape Portugal."</p>
+                <span class="testimonial-name">Joana F.</span>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Maxipuff-Sem-Nicotina-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Maxi Puff Klip 18K 0 Nicotina Vanilla Classic Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"Adoro este cigarro eletr0nico descartavel sem nicotina. Muitos sabores de vape e uma excelente quantidade de tragadas. Recomendo esta vape shop."</p>
+                <span class="testimonial-name">Lara F.</span>
+              </article>
+               <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Hayati-Pro-Max-Sem-Nicotina-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Hayati Pro Max 4K 0 Nicotina Cola Lime Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"Os vapes descartaveis s&atilde;o de alta qualidade. Este vape sem nicotina tem sabores de vape muito bons e proporciona um vaping suave."</p>
+                <span class="testimonial-name">Patricia M.</span>
+              </article>
+               <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Hayati-Pro-Ultra-0-Nicotina-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Hayati Pro Ultra 15K 0 Nicotina Crystal Ice Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"O melhor cigarro eletronico descartavel que j&aacute; experimentei! Este vape tem longa dura&ccedil;&atilde;o de tragadas e &oacute;timos sabores de vape."</p>
+                <span class="testimonial-name">Rita F.</span>
+              </article>
+               <article class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="img/Hayati-Pro-ultra-Sem-Nicotina-Vape-Descartavel-Portugal-Cigarro-Eletronico-Avaliacao.jpg" alt="Hayati Pro Ultra 15K 0 Nicotina Crystal Ice Cigarro Eletronico" class="testimonial-photo-img">
+                </div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-quote">"Perfeito para vapers que procuram vape sem nicotina. Os vapes descartaveis t&ecirc;m muitos sabores de vape e s&atilde;o f&aacute;ceis de usar."</p>
+                <span class="testimonial-name">João P.</span>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="testimonialsPrev" aria-label="Testemunho anterior">←</button>
+            <div class="carousel-dots" id="testimonialsDots" aria-label="Indicadores dos testemunhos"></div>
+            <button class="carousel-btn" id="testimonialsNext" aria-label="Testemunho seguinte">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div class="cta-band__head">
+          <div>
+            <p class="eyebrow">Compra por grosso</p>
+            <h2>Descontos automáticos por volume</h2>
+            <p class="section-intro">Descontos automáticos por volume em vapes descartáveis e cigarros eletrónicos. Poupa mais à medida que compras mais — ideal para revendedores, vape shops e compras em quantidade.</p>
+          </div>
+          <a class="btn cta-band__button" href="https://vapeportugal.pt/">Encomendar Agora</a>
+        </div>
+
+        <div class="cta-band__tiers">
+          <a class="cta-tier" href="https://vapeportugal.pt/" aria-label="Encomendar 3 ou mais unidades com 10 por cento de desconto">
+            <span class="cta-tier__count">3+</span>
+            <strong class="cta-tier__discount">-10%</strong>
+            <span class="cta-tier__label">unidades</span>
+          </a>
+          <a class="cta-tier" href="https://vapeportugal.pt/" aria-label="Encomendar 6 ou mais unidades com 15 por cento de desconto">
+            <span class="cta-tier__count">6+</span>
+            <strong class="cta-tier__discount">-15%</strong>
+            <span class="cta-tier__label">unidades</span>
+          </a>
+          <a class="cta-tier" href="https://vapeportugal.pt/" aria-label="Encomendar 10 ou mais unidades com 20 por cento de desconto">
+            <span class="cta-tier__count">10+</span>
+            <strong class="cta-tier__discount">-20%</strong>
+            <span class="cta-tier__label">unidades</span>
+          </a>
+          <a class="cta-tier cta-tier--featured" href="https://vapeportugal.pt/" aria-label="Encomendar 50 ou mais unidades com 50 por cento de desconto">
+            <span class="cta-tier__ribbon">Melhor oferta</span>
+            <span class="cta-tier__count">50+</span>
+            <strong class="cta-tier__discount">-50%</strong>
+            <span class="cta-tier__label">melhor oferta</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="container footer-main">
+      <div class="footer-column">
+        <a class="brand brand--footer" href="https://vapeportugal.pt/">
+          <img src="img/favicon-96x96.png" alt="Vapes Sem Nicotina" class="brand-mark">
+          <span class="brand-copy">
+            <strong>Vapes Sem Nicotina</strong>
+          </span>
+        </a>
+        <h3>Produtos</h3>
+        <div class="footer-link-list">
+          <span>Hayati Pro Ultra 15K</span>
+          <span>Hayati Pro Max 4K</span>
+          <span>Maxi Puff Klip 18K</span>
+          <span>Sabores frutados e frescos</span>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3 >Pagina Inicial</h3>
+        <div class="footer-link-list">
+        <a href="https://vapeportugal.pt/">Produtos</a>
+        <a href="https://vapeportugal.pt/">Sobre nós</a>
+        <a href="https://vapeportugal.pt/">Blog</a>
+        <a href="https://vapeportugal.pt/">Contacto</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contacto</h3>
+        <div class="footer-link-list">
+          <a href="https://vapeportugal.pt/">info@vapeportugal.pt</a>
+          <a href="https://vapeportugal.pt/">+351 935 718 678</a>
+        </div>
+        <div class="footer-social" aria-label="Redes sociais">
+          <a class="footer-social-link" href="https://vapeportugal.pt/" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none"></rect>
+              <circle cx="12" cy="12" r="4.1" fill="none"></circle>
+              <circle cx="17.4" cy="6.8" r="1.1"></circle>
+            </svg>
+          </a>
+          <a class="footer-social-link" href="https://vapeportugal.pt/" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.4 20.5v-7h2.6l.4-3h-3V8.8c0-.9.2-1.5 1.5-1.5h1.6V4.8c-.3 0-1.2-.1-2.4-.1-2.4 0-4 1.5-4 4.2v1.7H7.6v3h2.5v7h3.3Z"></path>
+            </svg>
+          </a>
+          <a class="footer-social-link" href="https://vapeportugal.pt/" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.4 3.2c.2 1.5 1.1 2.9 2.5 3.7.9.6 2 .9 3.1.9v2.9c-1.7 0-3.3-.5-4.7-1.3v5.8c0 2.9-2.3 5.2-5.2 5.2s-5.2-2.3-5.2-5.2 2.3-5.2 5.2-5.2c.3 0 .6 0 .9.1V13c-.3-.1-.5-.1-.8-.1-1.2 0-2.2 1-2.2 2.2s1 2.2 2.2 2.2 2.2-1 2.2-2.2V3.2h3Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-expand">
+      <button class="footer-toggle" id="footerToggle" type="button" aria-expanded="false" aria-controls="footerCities">
+        <span>Vapes sem nicotina em Portugal</span>
+        <span class="footer-toggle-arrow">v</span>
+      </button>
+      <ul class="footer-span-list" id="footerCities">
+        <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Lisboa</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Porto</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Braga</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Coimbra</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Faro</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Aveiro</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Cascais</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Sintra</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Lagos</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Albufeira</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Évora</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Guimarães</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Viseu</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Setúbal</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Leiria</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Portimão</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Funchal</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Vila Nova de Gaia</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Ponta Delgada</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Bragança</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Viana do Castelo</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Covilhã</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Tomar</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Beja</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Elvas</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Tavira</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Olhão</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Peniche</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Nazaré</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Ericeira</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Torres Vedras</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Barcelos</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Chaves</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Espinho</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Matosinhos</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Amarante</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Santarém</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Castelo Branco</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Guarda</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Lamego</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Almada</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Oeiras</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Seixal</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Montijo</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Sesimbra</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Palmela</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Entroncamento</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Abrantes</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Figueira da Foz</a></li>
+                    <li><a href="https://vapeportugal.pt/">Vapes Descartáveis em Peso da Régua</a></li>
+      </ul>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Vapes Sem Nicotina. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
