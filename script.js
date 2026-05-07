@@ -1,7 +1,5 @@
 ﻿const menuToggle = document.getElementById("menuToggle");
 const siteNav = document.getElementById("siteNav");
-const toggleMore = document.getElementById("toggleMore");
-const moreContent = document.getElementById("moreContent");
 const currentYear = document.getElementById("currentYear");
 const footerToggle = document.getElementById("footerToggle");
 const footerCities = document.getElementById("footerCities");
@@ -231,13 +229,6 @@ siteNav?.querySelectorAll("a").forEach((link) => {
     siteNav.classList.remove("is-open");
     menuToggle?.setAttribute("aria-expanded", "false");
   });
-});
-
-toggleMore?.addEventListener("click", () => {
-  const expanded = toggleMore.getAttribute("aria-expanded") === "true";
-  toggleMore.setAttribute("aria-expanded", String(!expanded));
-  toggleMore.textContent = expanded ? "Ver mais" : "Ver menos";
-  moreContent.hidden = expanded;
 });
 
 if (footerToggle && footerCities) {
