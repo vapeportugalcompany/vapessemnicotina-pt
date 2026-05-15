@@ -16,6 +16,206 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="manifest" href="site.webmanifest" />
+  <!-- TODO: Add Product Offer price/availability JSON-LD on real product templates when verified product data is available. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "OnlineStore",
+          "@id": "https://vapeportugal.pt/#organization",
+          "name": "Vapes Sem Nicotina",
+          "url": "https://vapeportugal.pt/",
+          "logo": "https://vapeportugal.pt/favicon-96x96.png",
+          "description": "Loja de vapes sem nicotina em Portugal. Descobre vape descartável, cigarros eletrónicos e sabores premium com envio rápido, preços competitivos e milhares de tragadas.",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Portugal"
+          },
+          "availableLanguage": {
+            "@type": "Language",
+            "name": "Portuguese",
+            "alternateName": "pt-PT"
+          },
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+351 935 718 678",
+              "email": "info@vapeportugal.pt",
+              "contactType": "customer support",
+              "areaServed": "PT",
+              "availableLanguage": "pt-PT"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://vapeportugal.pt/#website",
+          "name": "Vape Sem Nicotina - Loja Online em Portugal",
+          "url": "https://vapeportugal.pt/",
+          "publisher": {
+            "@id": "https://vapeportugal.pt/#organization"
+          },
+          "inLanguage": "pt-PT"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://vapeportugal.pt/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Pagina Inicial",
+              "item": "https://vapeportugal.pt/"
+            }
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://vapeportugal.pt/#collection",
+          "name": "Vapes Descartáveis Sem Nicotina",
+          "url": "https://vapeportugal.pt/",
+          "description": "Vape descartável 0% nicotina com muitas tragadas e sabores intensos. Descobre cigarros eletrónicos descartáveis prontos a usar, ideais para uma experiência de vaping prática e satisfatória.",
+          "isPartOf": {
+            "@id": "https://vapeportugal.pt/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://vapeportugal.pt/#breadcrumbs"
+          },
+          "inLanguage": "pt-PT",
+          "mainEntity": {
+            "@type": "ItemList",
+            "@id": "https://vapeportugal.pt/#featured-products",
+            "name": "Cigarros eletrónicos descartáveis em destaque",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Product",
+                  "@id": "https://vapeportugal.pt/products/hayati-pro-ultra-15k-0-nic-vape-descartavel-portugal#product",
+                  "name": "Hayati Pro Ultra 15K",
+                  "image": "https://vapeportugal.pt/img/Hayati-Pro-Ultra-15K-Vape-Descartavel-Portugal-Crystal-Ice-Icy-Citrus-0-Nicotina-15000-Tragadas.png",
+                  "description": "15000 Puffs — cigarro eletrónico descartável",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Hayati"
+                  },
+                  "url": "https://vapeportugal.pt/products/hayati-pro-ultra-15k-0-nic-vape-descartavel-portugal"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Product",
+                  "@id": "https://vapeportugal.pt/products/hayati-pro-max-4k-vape-descartavel-portugal#product",
+                  "name": "Hayati Pro Max 4K",
+                  "image": "https://vapeportugal.pt/img/Hayati-Pro-Max-4K-Vape-Descartavel-Portugal-Blackcurrant-Mango-4000-Tragadas.png",
+                  "description": "4000 Puffs — cigarro eletrónico descartável",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Hayati"
+                  },
+                  "url": "https://vapeportugal.pt/products/hayati-pro-max-4k-vape-descartavel-portugal"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Product",
+                  "@id": "https://vapeportugal.pt/products/maxi-puff-klip-18k-vape-descartavel-portugal#product",
+                  "name": "Maxi Puff Klip 18K",
+                  "image": "https://vapeportugal.pt/img/Maxi-Puff-Klip-18K-Vape-Descartavel-Portugal-Vanilla-Classic-18000-Tragadas.png",
+                  "description": "18000 Puffs — cigarro eletrónico descartável",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Maxi Puff"
+                  },
+                  "url": "https://vapeportugal.pt/products/maxi-puff-klip-18k-vape-descartavel-portugal"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://vapeportugal.pt/#faq",
+          "inLanguage": "pt-PT",
+          "isPartOf": {
+            "@id": "https://vapeportugal.pt/#website"
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quantas tragadas têm os vapes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende do modelo. Temos cigarros eletrónicos descartáveis com 4000, 15000 e até 18000 tragadas para uma utilização prolongada."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Que sabores de vape estão disponíveis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Disponibilizamos uma grande variedade de sabores de vape, incluindo sabores frutados, doces, frescos, mentolados e combinações intensas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Fazem envio para todo o Portugal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. A nossa vape shop faz envios rápidos para todo o Portugal com entrega segura e rápida."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Os cigarros eletrónicos descartáveis são fáceis de utilizar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. Basta abrir, inalar e desfrutar. São ideais tanto para novos vapers como para utilizadores experientes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual é o melhor vape sem nicotina?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modelos como Hayati Pro Ultra 15K, Hayati Pro Max 4K e Maxi Puff Klip 18K estão entre os vapes sem nicotina mais procurados da nossa coleção."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Existem descontos para compras em quantidade?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. Oferecemos descontos automáticos por volume em compras por grosso, ideais para revendedores e vape shops."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo dura um vape descartável?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A duração depende do número de tragadas e da frequência de utilização. Os nossos vapes foram desenvolvidos para oferecer longa duração e desempenho consistente."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Porque escolher um vape sem nicotina?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Os vapes sem nicotina oferecem uma experiência focada no sabor, praticidade e sensação de vaping, sem nicotina."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <header class="site-header">
